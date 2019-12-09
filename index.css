@@ -1,0 +1,61 @@
+body{
+    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    width: 80%;
+    padding-bottom: 1em;
+}
+h2{
+    color: blueviolet;
+}
+
+.ekstra-fin-tekst {
+    background-color: coral;
+    color: darkgreen;
+}
+
+.skygge {
+    box-shadow: 0 0 0.2em blue;
+
+
+    /* box-shadow: 1.1em 1.1em 0.2em pink; */
+}
+
+.textskygge {
+    text-shadow: .2em .2em hsla(120, 100%, 50%, .2);
+}
+
+#n2 {
+    color: yellow;
+}
+p{
+    /* border: 5px dashed red; */
+    border-radius: 1em;
+    padding: 2em;
+    /* background: linear-gradient(90deg, white, black); */
+}
+
+.usynlig-link {
+    color: black;
+    text-decoration: none;
+    cursor: text;
+}
+
+.lurelinkhehe {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.invisible-hint::selection {
+    color: red;
+}
+
+.white-on-white {
+    color: aquamarine;
+    transform: rotate(180deg);
+}
+
+::selection {
+    background-color: aquamarine;
+}
