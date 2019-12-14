@@ -1,61 +1,94 @@
 body{
-    background-color: aquamarine;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    width: 80%;
-    padding-bottom: 1em;
-}
-h2{
-    color: blueviolet;
-}
-
-.ekstra-fin-tekst {
-    background-color: coral;
-    color: darkgreen;
-}
-
-.skygge {
-    box-shadow: 0 0 0.2em blue;
-
-
-    /* box-shadow: 1.1em 1.1em 0.2em pink; */
-}
-
-.textskygge {
-    text-shadow: .2em .2em hsla(120, 100%, 50%, .2);
-}
-
-#n2 {
-    color: yellow;
-}
-p{
-    /* border: 5px dashed red; */
-    border-radius: 1em;
+    text-align: center;
     padding: 2em;
-    /* background: linear-gradient(90deg, white, black); */
+    overflow: hidden;
 }
 
-.usynlig-link {
-    color: black;
-    text-decoration: none;
-    cursor: text;
+.harryFont {
+    font-family: "Harry Potter";
 }
 
-.lurelinkhehe {
-    color: blue;
-    text-decoration: underline;
-    cursor: pointer;
+.magicFont {
+    font-family: "Magic";
+}
+
+@font-face {
+    font-family: "Harry Potter";
+    src: 
+    url("fonts/harrypotter/parryhotter-webfont.woff") format("woff")
+}
+
+@font-face {
+    font-family: "Magic";
+    src: url("fonts/magicschool/magicschoolone-webfont.woff") format("woff")
 }
 
 .invisible-hint::selection {
     color: red;
 }
 
-.white-on-white {
-    color: aquamarine;
-    transform: rotate(180deg);
+#backgroundImagePaper {
+    background-image: url("pictures/modern-aged-paper-5.jpg");
+    background-size: cover;
 }
 
-::selection {
-    background-color: aquamarine;
+#backgroundImageHagrid {
+    background-image: url("pictures/eb7cf624554ac9b4a78295a20b3f42db.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#backgroundImageNisser {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("pictures/julenisse/nisserFerdig.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#backgroundImageTrelawney {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("pictures/trelawney.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#backgroundImageFireworks {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("pictures/fireworks.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#backgroundImageVoldemort {
+    background-image: url("pictures/voldemort.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.whiteBackground {
+    background-color: white;
+}
+
+.blackBackground {
+    background-color: black;
+}
+
+.whiteText {
+    color: white;
+}
+
+.yellowText {
+    color: darksalmon;
+}
+
+.margin4 {
+    margin: 4em;
+}
+
+#beger {
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
