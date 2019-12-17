@@ -22,6 +22,7 @@ $("#trelawney-form").click((e) => {
     e.preventDefault();
     var passord = "butterbeer";
     if ($("#trelawneyPassord").val() == passord) {
+        print("Inside!");
         window.location.href = "merpeople.html";
     } else {
         window.alert("Feil passord!");
