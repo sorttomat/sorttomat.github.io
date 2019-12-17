@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stenography</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+
+<body class="magicFont">
+
+    <div class="container">
+        <div style="position: fixed; top: 0; right: 0; margin: 3em;">
+            <img src="pictures/blueFlame.png" height="70">
+            <p style="margin: 0;">
+                <font size="+3">5</font>
+            </p>
+        </div>
+        <p style="position: fixed; top: 0; right: 10%;">
+            <font size="+4">Hvem har gjemt seg i mistelteinen??</font>
+        </p>
+
+        <p style="position: fixed; right: 10%; bottom: 70%; top: 30%; width: 500px;">
+            <font size="+3">Hvis du ser veldig nøye, ser du at noen har prøvd å kamuflere seg i bildet til venstre.
+                Heldigvis har hen gjort en litt dårlig jobb, så det bør gå an å finne ut hvem det er!</font>
+        </p>
+
+        <form id="sten-form" style="position: fixed; right: 10%; bottom: 30%;">
+            <input type="text" id="stenographyPassord" />
+            <button type="submit">Just a smidge!</button>
+        </form>
+
+        <img src="pictures/sten/encrypted.png" width="1500">
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

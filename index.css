@@ -118,6 +118,7 @@ body{
     transform: scaleX(-1);
 }
 
-span.b {
-    display: inline-block;
+.container {
+    position: relative;
+    text-align: center;
 }
