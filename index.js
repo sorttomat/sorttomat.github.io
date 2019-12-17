@@ -18,7 +18,7 @@ $("#decrypt-form").click((e) => {
     }
 });
 
-$("#trelawney-form").submit((e) => {
+$("#trelawney-form").click((e) => {
     e.preventDefault();
     var passord = "butterbeer";
     if ($("#trelawneyPassord").val() == passord) {
@@ -28,7 +28,7 @@ $("#trelawney-form").submit((e) => {
     }
 });
 
-$("#selkie-form").submit((e) => {
+$("#selkie-form").click((e) => {
     e.preventDefault();
     var passord = "mariahcarey";
     if ($("#selkie").val() == passord) {
@@ -38,7 +38,7 @@ $("#selkie-form").submit((e) => {
     }
 });
 
-$("#sten-form").submit((e) => {
+$("#sten-form").click((e) => {
     e.preventDefault();
     var passord = "bowtruckle";
     if ($("#stenographyPassord").val() == passord) {
