@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,28 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body id="backgroundImageTrelawney" class="magicFont">
+    <div style="position: fixed; top: 0; right: 0; margin: 3em;">
+        <img src="pictures/blueFlame.png" height="70">
+        <p style="margin: 0;">
+            <font size="+3">3</font>
+        </p>
+    </div>
     <h1>
         <font size="+4">Aiaiai! Virker som at Trelawney trenger litt hjelp med å tyde tekoppen sin...!</font>
     </h1>
 
     <img src="pictures/rebus/butterbeer.png" width="1300">
-    
-    <p class="margin4">
+
+    <form class="margin4" id="trelawney-form">
         <input type="text" id="trelawneyPassord" />
-        <button id="trelawneyButton">Sjekk ditt Indre Øye!</button>
-    </p>
+        <button type="submit">Sjekk ditt Indre Øye!</button>
+    </form>
 
     <script src="index.js"></script>
 </body>
+
 </html>

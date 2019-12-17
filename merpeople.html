@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ArrestoMomentum</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+</head>
+
+<body id="backgroundImageMerpeople" class="magicFont textLeft">
+    <div style="position: fixed; top: 0; right: 0; margin: 3em; text-align: center;">
+        <img src="pictures/blueFlame.png" height="70">
+        <p style="margin: 0;">
+            <font size="+3">4</font>
+        </p>
+    </div>
+    <div style="width: 500px; color: darkgoldenrod;">
+        <p>
+            <font size="+5">Selkie prøver å fortelle deg noe, men det kan nesten høres ut som at stemmen hennes har
+                blitt tuklet med (og kanskje mer enn en gang) på magisk vis ...
+            </font>
+        </p>
+        <p>
+            <font size="+3">Hvilken artist har Selkie totalt dilla på for tiden?</font>
+        </p>
+
+        <form class="mirror" id="selkie-form">
+            <input type="text" id="selkie" />
+            <button type="submit">Check answer!</button>
+        </form>
+
+    </div>
+
+    <div id="beger">
+        <audio controls>
+            <source src="mystery.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+
+    <a style="position: fixed; bottom: 0; right: 0;" href="mystery.mp3" download>
+        <img src="pictures/goldenEgg.png" height="100">
+    </a>
+    <script src="index.js"></script>
+</body>
+
+</html>

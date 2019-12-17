@@ -67,6 +67,13 @@ body{
     background-repeat: no-repeat;
 }
 
+#backgroundImageMerpeople {
+    background-image: url("pictures/merpeople.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
 .whiteBackground {
     background-color: white;
 }
@@ -95,4 +102,22 @@ body{
 
 #lumos {
     filter: brightness(50%);
+}
+
+#timeTurner {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.textLeft {
+    text-align: left;
+}
+
+.mirror {
+    transform: scaleX(-1);
+}
+
+span.b {
+    display: inline-block;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +8,34 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
-<body id="backgroundImageHagrid" class ="blackBackground magicFont">
+<body id="backgroundImageHagrid" class="blackBackground magicFont">
     <div class="yellowText">
+        <div style="position: fixed; top: 0; right: 0; margin: 3em; color: black;">
+            <img src="pictures/blueFlame.png" height="70">
+            <p style="margin: 0;">
+                <font size="+3">2</font>
+            </p>
+        </div>
         <p>
-            <font size="+3">Hagrid: "The word is Q-- [becomes tense] The word is Q--"</font>
+            <font size="+3">"Hagrid: The word is Q-- [becomes tense] The word is Q--</font>
         </p>
         <p>
-            <font size="+3">Harry: "Maybe if you wrote it down?"</font>
+            <font size="+3">Harry: Maybe if you wrote it down?</font>
         </p>
         <p>
-            <font size="+3">Hagrid: "Nah, I can't spell it. All right ... [in a whisper] QWxPaG9Nb3JB"</font>
+            <font size="+3">Hagrid: Nah, I can't spell it. All right ... [in a whisper] QWxPaG9Nb3JB"</font>
         </p>
-        <p>
-            <input type="text" id="decrypt" />
-            <button id="decrypt-button">Simsalabim!</button>
-        </p>
-    </div>
 
-        <script src="index.js"></script>
+        <form id="decrypt-form">
+            <input type="text" id="decrypt" />
+            <button type="submit">Simsalabim!</button>
+        </form>
+
+    </div>
+    <script src="index.js"></script>
 </body>
+
 </html>
