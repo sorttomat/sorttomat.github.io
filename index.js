@@ -42,7 +42,7 @@ $("#sten-form").click((e) => {
     e.preventDefault();
     var passord = "bowtruckle";
     if ($("#stenographyPassord").val() == passord) {
-        window.location.href = "cup.html";
+        window.location.href = "staircase.html";
     } else {
         window.alert("Feil passord!");
     }

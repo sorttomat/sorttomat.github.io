@@ -77,27 +77,34 @@
     }
 </script>
 
-<body id="backgroundImageStaircase">
+<body id="backgroundImageStaircase" class="magicFont">
     <div style="position: fixed; top: 0; right: 0; margin: 3em;">
         <img src="pictures/blueFlame.png" height="70">
         <p style="margin: 0;">
             <font size="+3">6</font>
         </p>
     </div>
-    <div class="container" style="top: 0; left: 40%; text-align: left;">
+
+    <p style="text-align: left; width: 400px; position: fixed; top: 0; left: 5%;">
+        <font size="+4">Trappene på Galtvort er som kjent svært rampete, og liker å bytte på hvor de leder til.
+            Kan du hjelpe stakkars Snape med å komme seg opp til shampoo-flasken sin?
+        </font>
+    </p>
+
+    <div class="container staircase" style="top: 0; left: 38%; text-align: left;">
         <img onclick="
                     flopTwo('staircaseDown', 'staircaseUp');
                     checkWin('staircaseUp', 'staircaseMiddle', 'staircaseDown');
-                    " id="staircaseDown" src="pictures/staircaseright.jpg" class="staircase">
+                    " id="staircaseDown" src="pictures/staircaseleft.jpg" class="staircase">
         </img>
 
 
-        <img src="pictures/stairsUpShampoo.jpg" class="staircase">
+        <img src="pictures/stairsUpShampoo.png" class="staircase">
 
 
     </div>
 
-    <div class="container" style="left: 0">
+    <div class="container staircase" style="left: 0">
 
         <img onclick="
                 flopTwo('staircaseMiddle', 'staircaseUp');
@@ -107,9 +114,9 @@
 
     </div>
 
-    <div class="container" style="left: -10%">
+    <div class="container staircase" style="left: -10%">
 
-        <img src="pictures/stairsDown.jpg" class="staircase">
+        <img src="pictures/stairsDown.png" class="staircase">
 
         <img onclick="
                     flopAll('staircaseUp', 'staircaseMiddle', 'staircaseDown');
