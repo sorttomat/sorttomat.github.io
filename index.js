@@ -47,3 +47,4 @@ $("#sten-form").click((e) => {
         window.alert("Feil passord!");
     }
 });
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maybelline</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+
+<script>
+    var right = 'staircaseright.jpg';
+    var left = 'staircaseleft.jpg';
+
+    function getSource(id) {
+        var source = document.getElementById(id).src;
+        var last = source.lastIndexOf('/');
+        source = source.substring(last + 1);
+        return source;
+    }
+
+    function checkWin(top, middle, bottom) {
+        var sourceUp = getSource(top);
+        var sourceMiddle = getSource(middle);
+        var sourceDown = getSource(bottom);
+
+        if (sourceUp == right && sourceMiddle == left && sourceDown == right) {
+            var fab = document.getElementById('fabulousLink');
+            fab.style.display = 'initial';
+        }
+    }
+
+    function flopTwo(flop1, flop2) {
+        var source1 = getSource(flop1);
+        var source2 = getSource(flop2);
+
+        if (source1 == right) {
+            document.getElementById(flop1).src = 'pictures/staircaseleft.jpg';
+        } else {
+            document.getElementById(flop1).src = 'pictures/staircaseright.jpg';
+        }
+
+        if (source2 == right) {
+            document.getElementById(flop2).src = 'pictures/staircaseleft.jpg';
+        } else {
+            document.getElementById(flop2).src = 'pictures/staircaseright.jpg';
+        }
+    }
+
+    function flopAll(top, middle, bottom) {
+        var sourceTop = getSource(top);
+
+        var sourceMiddle = getSource(middle);
+
+        var sourceDown = getSource(bottom);
+
+        if (sourceTop == right) {
+            document.getElementById(top).src = 'pictures/staircaseleft.jpg';
+        } else {
+            document.getElementById(top).src = 'pictures/staircaseright.jpg';
+        }
+
+        if (sourceMiddle == right) {
+            document.getElementById(middle).src = 'pictures/staircaseleft.jpg';
+        } else {
+            document.getElementById(middle).src = 'pictures/staircaseright.jpg';
+        }
+
+        if (sourceDown == right) {
+            document.getElementById(bottom).src = 'pictures/staircaseleft.jpg';
+        } else {
+            document.getElementById(bottom).src = 'pictures/staircaseright.jpg';
+        }
+    }
+</script>
+
+<body id="backgroundImageStaircase">
+    <div style="position: fixed; top: 0; right: 0; margin: 3em;">
+        <img src="pictures/blueFlame.png" height="70">
+        <p style="margin: 0;">
+            <font size="+3">6</font>
+        </p>
+    </div>
+    <div class="container" style="top: 0; left: 40%; text-align: left;">
+        <img onclick="
+                    flopTwo('staircaseDown', 'staircaseUp');
+                    checkWin('staircaseUp', 'staircaseMiddle', 'staircaseDown');
+                    " id="staircaseDown" src="pictures/staircaseright.jpg" class="staircase">
+        </img>
+
+
+        <img src="pictures/stairsUpShampoo.jpg" class="staircase">
+
+
+    </div>
+
+    <div class="container" style="left: 0">
+
+        <img onclick="
+                flopTwo('staircaseMiddle', 'staircaseUp');
+                checkWin('staircaseUp', 'staircaseMiddle', 'staircaseDown');
+                " id="staircaseMiddle" src="pictures/staircaseright.jpg" class="staircase">
+        </img>
+
+    </div>
+
+    <div class="container" style="left: -10%">
+
+        <img src="pictures/stairsDown.jpg" class="staircase">
+
+        <img onclick="
+                    flopAll('staircaseUp', 'staircaseMiddle', 'staircaseDown');
+                    checkWin('staircaseUp', 'staircaseMiddle', 'staircaseDown');
+                    " id="staircaseUp" src="pictures/staircaseright.jpg" class="staircase">
+        </img>
+
+    </div>
+
+    <a href="cup.html" id="fabulousLink" style="position: fixed; bottom: 0; right: 0; display: none;">
+        <img src="pictures/fabulous.jpg" class="staircase">
+    </a>
+</body>
+
+</html>
